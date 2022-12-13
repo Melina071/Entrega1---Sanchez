@@ -1,0 +1,33 @@
+{% extends "AppEntrega/padre.html" %}
+
+
+
+
+{% block titulo %}
+
+DISCOS
+
+{% endblock %}
+
+
+
+{% block descripcion %}                            
+
+¿Quieres agregar un álbum al catálogo?
+
+{% endblock %}
+
+
+{% block urldelboton%}
+                        
+<a class="btn btn-primary" href="{% url 'formulariodiscos' %}">
+
+{% endblock %}
+
+{% block boton %}
+                        
+Registra un disco
+
+
+{% endblock %}
+

@@ -1,0 +1,28 @@
+{% extends "AppEntrega/padre.html" %}
+
+
+{% block titulo %}
+
+{% endblock %}
+
+
+
+{% block descripcion %}                            
+
+
+Ingrese el nombre o marca del modelo que busca:
+
+{% endblock %}
+
+
+{% block urldelboton%}
+<form action="/resultadosGuitarras" method="GET"> 
+
+    <input type="text", name="modelo" id="modelo">
+    
+    <input type="submit" value="Buscar">
+{% endblock %}
+
+{% block boton %}
+
+{% endblock %}

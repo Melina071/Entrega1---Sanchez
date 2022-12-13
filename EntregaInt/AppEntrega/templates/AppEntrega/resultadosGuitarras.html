@@ -1,0 +1,18 @@
+{% extends "AppEntrega/padre.html" %}
+
+
+{% block descripcion %}                            
+
+<p> Guitarras disponibles: </p>
+    
+    <ul>  
+    {% for z in guitarraresultados %}
+
+    <br>
+    <li> {{z.modelo}} al precio de ${{z.precio}} </li>
+    <br>
+    
+    </ul>    
+    {% endfor %}        
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "AppEntrega/padre.html" %}
+
+
+{% block titulo %}
+
+{% endblock %}
+
+
+
+{% block descripcion %}                            
+
+
+¿Qué instrumento desea aprender a tocar?
+
+{% endblock %}
+
+
+{% block urldelboton%}
+<form action="/resultadosLecciones" method="GET"> 
+
+    <input type="text", name="instrumento" id="instrumento">
+    
+    <input type="submit" value="Buscar">
+{% endblock %}
+
+{% block boton %}
+
+{% endblock %}

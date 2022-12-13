@@ -1,0 +1,34 @@
+{% extends "AppEntrega/padre.html" %}
+
+
+
+{% block titulo %}
+
+RECORD STORE
+
+{% endblock %}
+
+
+
+{% block descripcion %}                            
+
+Catálogo online de discos en venta, guitarras eléctricas en stock y nuestras lecciones musicales.
+
+{% endblock %}
+
+
+
+
+{% block urldelboton %}
+<form action="busquedaDiscos">
+    <input type="submit" value="Busca un disco" />
+</form>
+<br>
+<form action="busquedaGuitarras">
+    <input type="submit" value="Busca una guitarra" />
+</form>
+<br>
+<form action="busquedaLecciones">
+    <input type="submit" value="Busca una leccion" />
+</form>
+{% endblock %}

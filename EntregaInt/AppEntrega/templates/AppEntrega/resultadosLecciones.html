@@ -1,0 +1,18 @@
+{% extends "AppEntrega/padre.html" %}
+
+
+{% block descripcion %}                            
+
+<p> Puede anotarse a las siguientes lecciones </p>
+    
+    <ul>  
+    {% for y in leccionesresultados %}
+
+    <br>
+    <li> Clases de {{y.instrumento}} con  {{y.profesor}} </li>
+    <br>
+    
+    </ul>    
+    {% endfor %}        
+
+{% endblock %}

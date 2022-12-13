@@ -1,0 +1,17 @@
+{% extends "AppEntrega/padre.html" %}
+
+
+{% block descripcion %}                            
+
+<p> Discos disponibles: </p>
+    <br>
+    <ul>  
+
+    {% for x in discoresultados %}
+
+        <li>"{{x.nombre}}" de {{x.artista}} </li>
+    
+    </ul>    
+    {% endfor %}        
+
+{% endblock %}

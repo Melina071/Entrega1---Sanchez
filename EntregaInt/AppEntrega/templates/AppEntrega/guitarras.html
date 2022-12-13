@@ -1,0 +1,31 @@
+{% extends "AppEntrega/padre.html" %}
+
+
+{% block titulo %}
+
+GUITARRAS
+
+{% endblock %}
+
+
+
+{% block descripcion %}                            
+
+¿Quieres añadir una guitarra al catálogo?
+
+{% endblock %}
+
+
+{% block urldelboton%}
+                        
+<a class="btn btn-primary" href="{% url 'formularioguitarras' %}">
+
+{% endblock %}
+
+{% block boton %}
+                        
+Registra una guitarra
+
+
+{% endblock %}
+
