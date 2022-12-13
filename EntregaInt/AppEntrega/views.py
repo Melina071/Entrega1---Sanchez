@@ -41,7 +41,7 @@ def formularioLecciones(request):
             
             informacion = formulario.cleaned_data
             
-            leccion = Lecciones(nombre=informacion['nombre'], artista=informacion['artista'], dicta=informacion['dicta'])
+            leccion = Lecciones(profesor=informacion['profesor'], instrumento=informacion['instrumento'], dicta=informacion['dicta'])
             
             leccion.save()
             
